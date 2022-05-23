@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    * {
+  padding: 0;
+  margin: 0;
+}
+html , body{
+  width: 100%;
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: aquamarine;
+}
+
+#card {
+  height: 430px;
+  width: 350px;
+  background: gray;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: 8px 9px 2.4px black;
+}
+.fab {
+  font-size: 150px;
+  color: white;
+}
+#cityname, #temprating {
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bolder;
+  padding: 15px;
+  color: white;
+}
+#subtemp {
+  color: white;
+  font-size: 15px;
+  font-weight: bolder;
+  font-style: italic;
+  font-family:'Times New Roman', Times, serif
+}
+  </style>
+  <title>Weather Application</title>
+</head>
+<body>
+  <div id="card">
+    <div id="cloudicon">
+      <i class="fab fa-cloudflare"></i>
+    </div>
+    <div id="temprating">
+      Current Temperature {%tempVal%}
+    </div>
+    <div id="subtemp">
+      Max-temp:{%Maxtemp%} , Min-temp:{%Mintemp%}
+    </div>
+    <div id="cityname">
+      {%city%} , {%Country%}
+    </div>
+  </div>
+</body>
+</html>
